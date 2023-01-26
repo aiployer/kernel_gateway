@@ -39,7 +39,7 @@ dev: ## Make a server in jupyter_websocket mode
 dev-http: ## Make a server in notebook_http mode
 	$(SA) $(ENV) && python kernel_gateway \
 			--KernelGatewayApp.api='kernel_gateway.notebook_http' \
-			--KernelGatewayApp.seed_uri=etc/api_examples/api_intro.ipynb
+			--KernelGatewayApp.seed_uri=etc/api_examples/endpoint_ordering.ipynb
 
 docs: ## Make HTML documentation
 	$(SA) $(ENV) && make -C docs html
